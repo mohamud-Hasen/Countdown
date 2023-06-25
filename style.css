@@ -10,7 +10,7 @@ body{
     background-position: center center;
     height: 100vh;
     color: #fff;
-    font-family: 'poppins', sans-serif;
+    font-family:  sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,6 +22,15 @@ body{
 h1{
     font-size: 60px;
     margin: -80px 0 40px;
+}
+.year {
+    font-size: 200px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.1;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .countdown {
     display: flex;
@@ -39,13 +48,13 @@ h1{
 }
 @media (max-width: 500px) {
     h1 {
-        font-size: 35px;
+        font-size: 40px;
     }
     .time{
         margin: 5px;
     }
     .time h2 {
-        font-size: 12px;
+        font-size: 20px;
         margin: 0;
     }
     .time small {
